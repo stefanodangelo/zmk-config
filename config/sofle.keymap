@@ -39,8 +39,8 @@
 //                 | GUI | ALT  | CTRL | LOWER|  SPACE |  | ENTER | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
 &kp ESC   &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6   &kp N7    &kp N8    &kp N9   &kp N0   &kp DEL
-&kt TAB   &kp Q  &kp W    &kp F    &kp P     &kp LBKT                         &kp RBKT &kp L     &kp U     &kp M    &kp G    &kp BSPC
-&kp CLCK  &kp S  &kp N    &kp R    &kp T     &kp COMMA                        &kp DOT  &kp A     &kp E     &kp I    &kp O    &kp J
+&kp TAB   &kp Q  &kp W    &kp F    &kp P     &kp LBKT                         &kp RBKT &kp L     &kp U     &kp M    &kp G    &kp BSPC
+&kt CLCK  &kp S  &kp N    &kp R    &kp T     &kp COMMA                        &kp DOT  &kp A     &kp E     &kp I    &kp O    &kp J
 &kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp MINUS  &kp C_MUTE &trans     &kp SQT  &kp H     &kp D     &kp Y    &kp B    &mt RSHIFT K
                  &kp LGUI &kp LALT &kp LCTRL &mo LOWER  &kp SPACE  &kp RET    &mo RAISE  &kp RCTRL &kp RALT  &kp RGUI
             >;
