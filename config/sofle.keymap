@@ -54,14 +54,14 @@
 // -------------------------------------------------------------------------------------------------------------
 // |   `   |  !   |  @  |  #   |   $   |  %   |                   |  ^   |   &   |   *   |  (   |   )   | HOME |
 // |   ~   |      |     |      |       |  {   |                   |  }   | PRVS  | PLAY  | NEXT |  END  | INS  |
-// |  SCRL |      |     |      |       |  <   |                   |  >   |   =   |   +   |  /   |   \   | PGUP |
-// |  PSCR | UNDO | CUT | COPY | PASTE |  _   |        |  |       |  "   |   ?   |   ;   |  :   |   |   | PGDN |
+// |       |      |     |      |       |  <   |                   |  >   |   =   |   +   |  /   |   \   | SCRL |
+// |       | UNDO | CUT | COPY | PASTE |  _   |        |  |       |  "   |   ?   |   ;   |  :   |   |   | PSCR |
 //                |     |      |       |      |        |  |       |      |       |       |      |
             bindings = <
 &kp GRAVE   &kp EXCL    &kp AT    &kp HASH    &kp DLLR      &kp PRCNT                   &kp CARET   &kp AMPS     &kp ASTRK &kp LPAR      &kp RPAR    &kp HOME 
 &kp TILDE   &trans      &trans    &trans      &trans        &kp LBRC                    &kp RBRC    &kp C_PREV   &kp C_PP  &kp C_NEXT    &kp END     &kp INS
-&kp SLCK    &trans      &trans    &trans      &trans        &kp LT                      &kp GT      &kp EQUAL    &kp PLUS  &kp BSLH      &kp FSLH    &kp PG_UP 
-&kp PSCRN   &kp K_UNDO  &kp K_CUT &kp K_COPY  &kp K_PASTE   &kp UNDER   &trans &trans   &kp DQT     &kp QMARK    &kp SEMI  &kp COLON     &kp PIPE    &kp PG_DN 
+&trans      &trans      &trans    &trans      &trans        &kp LT                      &kp GT      &kp EQUAL    &kp PLUS  &kp BSLH      &kp FSLH    &kp SLCK 
+&trans      &kp K_UNDO  &kp K_CUT &kp K_COPY  &kp K_PASTE   &kp UNDER   &trans &trans   &kp DQT     &kp QMARK    &kp SEMI  &kp COLON     &kp PIPE    &kp PSCRN 
                         &trans    &trans      &trans        &trans      &trans &trans   &trans      &trans       &trans    &trans
             >;
 
