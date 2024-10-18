@@ -34,13 +34,13 @@
 // --------------------------------------------------------------------------------------------------------------
 // |   ESC   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   DEL   |
 // |   TAB   |  Q  |  W  |  F   |  P   |  [   |                   |  ]   |  L    |  U    |  M   |   G   |  BKSPC  |
-// |   CAPS  |  S  |  N  |  R   |  T   |  ,   |                   |  .   |  A    |  E    |  I   |   O   |    J    |
+// |   CAPS  |  O  |  I  |  E   |  A   |  ,   |                   |  .   |  S    |  N    |  R   |   T   |    J    |
 // |  SHIFT  |  Z  |  X  |  C   |  V   |  -   |  MUTE  |  |       |  '   |  H    |  D    |  Y   |   B   | SHIFT/K |
 //                 | GUI | ALT  | CTRL | LOWER|  SPACE |  | ENTER | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
 &kp ESC   &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6   &kp N7    &kp N8    &kp N9   &kp N0   &kp DEL
 &kp TAB   &kp Q  &kp W    &kp F    &kp P     &kp LBKT                         &kp RBKT &kp L     &kp U     &kp M    &kp G    &kp BSPC
-&kt CLCK  &kp S  &kp N    &kp R    &kp T     &kp COMMA                        &kp DOT  &kp A     &kp E     &kp I    &kp O    &kp J
+&kt CLCK  &kp O  &kp I    &kp E    &kp A     &kp COMMA                        &kp DOT  &kp S     &kp N     &kp R    &kp T    &kp J
 &kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp MINUS  &kp C_MUTE &trans     &kp SQT  &kp H     &kp D     &kp Y    &kp B    &mt RSHIFT K
                  &kp LGUI &kp LALT &kp LCTRL &mo LOWER  &kp SPACE  &kp RET    &mo RAISE  &kp RCTRL &kp RALT  &kp RGUI
             >;
