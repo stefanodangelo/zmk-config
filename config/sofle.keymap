@@ -33,19 +33,19 @@
             display-name = "default";
 // --------------------------------------------------------------------------------------------------------------
 // |   ESC   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   DEL   |
-// |   TAB   |  Q  |  W  |  F   |  P   |  [   |                   |  ]   |  L    |  U    |  M   |   G   |  BKSPC  |
+// |   TAB   |  Q  |  W  |  U   |  F   |  [   |                   |  ]   |  L    |  P    |  M   |   G   |  BKSPC  |
 // |   CAPS  |  O  |  I  |  E   |  A   |  ,   |                   |  .   |  S    |  N    |  R   |   T   |    J    |
-// |  SHIFT  |  Z  |  X  |  C   |  V   |  -   |  MUTE  |  |       |  '   |  H    |  D    |  Y   |   B   | SHIFT/K |
+// |  SHIFT/K  |  Z  |  X  |  C   |  V   |  -   |  MUTE  |  |       |  '   |  H    |  D    |  Y   |   B   | SHIFT/K |
 //                 | GUI | ALT  | CTRL | LOWER|  SPACE |  | ENTER | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
 &kp ESC   &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6   &kp N7    &kp N8    &kp N9   &kp N0   &kp DEL
-&kp TAB   &kp Q  &kp W    &kp F    &kp P     &kp LBKT                         &kp RBKT &kp L     &kp U     &kp M    &kp G    &kp BSPC
+&kp TAB   &kp Q  &kp W    &kp U    &kp F     &kp LBKT                         &kp RBKT &kp L     &kp P     &kp M    &kp G    &kp BSPC
 &kt CLCK  &kp O  &kp I    &kp E    &kp A     &kp COMMA                        &kp DOT  &kp S     &kp N     &kp R    &kp T    &kp J
-&kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp MINUS  &kp C_MUTE &trans     &kp SQT  &kp H     &kp D     &kp Y    &kp B    &mt RSHIFT K
+&mt LSHIFT K &kp Z  &kp X    &kp C    &kp V     &kp MINUS  &kp C_MUTE &trans     &kp SQT  &kp H     &kp D     &kp Y    &kp B    &mt RSHIFT K
                  &kp LGUI &kp LALT &kp LCTRL &mo LOWER  &kp SPACE  &kp RET    &mo RAISE  &kp RCTRL &kp RALT  &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
         };
 
         lower_layer {
