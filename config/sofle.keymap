@@ -35,14 +35,14 @@
 // |   ESC   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   DEL   |
 // |   TAB   |  Q  |  W  |  U   |  F   |  [   |                   |  ]   |  L    |  P    |  M   |   G   |  BKSPC  |
 // |   CAPS  |  O  |  I  |  E   |  A   |  ,   |                   |  .   |  S    |  N    |  R   |   T   |    J    |
-// |  SHIFT/K  |  Z  |  X  |  C   |  V   |  -   |  MUTE  |  |       |  '   |  H    |  D    |  Y   |   B   | SHIFT/K |
+// | SHIFT/K |  Z  |  X  |  C   |  V   |  -   |  MUTE  |  |       |  '   |  H    |  D    |  Y   |   B   | SHIFT/K |
 //                 | GUI | ALT  | CTRL | LOWER|  SPACE |  | ENTER | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
-&kp ESC   &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6   &kp N7    &kp N8    &kp N9   &kp N0   &kp DEL
-&kp TAB   &kp Q  &kp W    &kp U    &kp F     &kp LBKT                         &kp RBKT &kp L     &kp P     &kp M    &kp G    &kp BSPC
-&kt CLCK  &kp O  &kp I    &kp E    &kp A     &kp COMMA                        &kp DOT  &kp S     &kp N     &kp R    &kp T    &kp J
-&mt LSHIFT K &kp Z  &kp X    &kp C    &kp V     &kp MINUS  &kp C_MUTE &trans     &kp SQT  &kp H     &kp D     &kp Y    &kp B    &mt RSHIFT K
-                 &kp LGUI &kp LALT &kp LCTRL &mo LOWER  &kp SPACE  &kp RET    &mo RAISE  &kp RCTRL &kp RALT  &kp RGUI
+&kp ESC      &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6     &kp N7    &kp N8    &kp N9   &kp N0   &kp DEL
+&kp TAB      &kp Q  &kp W    &kp U    &kp F     &kp LBKT                         &kp RBKT   &kp L     &kp P     &kp M    &kp G    &kp BSPC
+&kt CLCK     &kp O  &kp I    &kp E    &kp A     &kp COMMA                        &kp DOT    &kp S     &kp N     &kp R    &kp T    &kp J
+&mt LSHIFT K &kp Z  &kp X    &kp C    &kp V     &kp MINUS  &kp C_MUTE &trans     &kp SQT    &kp H     &kp D     &kp Y    &kp B    &mt RSHIFT K
+                    &kp LGUI &kp LALT &kp LCTRL &mo LOWER  &kp SPACE  &kp RET    &mo RAISE  &kp RCTRL &kp RALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -53,14 +53,14 @@
 // TODO: Some binds are waiting for shifted keycode support.
 // -------------------------------------------------------------------------------------------------------------
 // |   `   |  !   |  @  |  #   |   $   |  %   |                   |  ^   |   &   |   *   |  (   |   )   | HOME |
-// |   ~   |      |     |      |       |  {   |                   |  }   | PRVS  | PLAY  | NEXT |  END  | INS  |
-// |       |      |     |      |       |  <   |                   |  >   |   =   |   +   |  /   |   \   | SCRL |
+// |   ~   |      |     |  ^   |       |  {   |                   |  }   | PRVS  | PLAY  | NEXT |  END  | INS  |
+// |       |      | <-  |  v   |   ->  |  <   |                   |  >   |   =   |   +   |  /   |   \   | SCRL |
 // |       | UNDO | CUT | COPY | PASTE |  _   |        |  |       |  "   |   ?   |   ;   |  :   |   |   | PSCR |
 //                |     |      |       |      |        |  |       |      |       |       |      |
             bindings = <
 &kp GRAVE   &kp EXCL    &kp AT    &kp HASH    &kp DLLR      &kp PRCNT                   &kp CARET   &kp AMPS     &kp ASTRK &kp LPAR      &kp RPAR    &kp HOME 
-&kp TILDE   &trans      &trans    &trans      &trans        &kp LBRC                    &kp RBRC    &kp C_PREV   &kp C_PP  &kp C_NEXT    &kp END     &kp INS
-&trans      &trans      &trans    &trans      &trans        &kp LT                      &kp GT      &kp EQUAL    &kp PLUS  &kp BSLH      &kp FSLH    &kp SLCK 
+&kp TILDE   &trans      &trans    &kp UP      &trans        &kp LBRC                    &kp RBRC    &kp C_PREV   &kp C_PP  &kp C_NEXT    &kp END     &kp INS
+&trans      &trans      &kp LEFT  &kp DOWN    &kp RIGHT     &kp LT                      &kp GT      &kp EQUAL    &kp PLUS  &kp BSLH      &kp FSLH    &kp SLCK 
 &trans      &kp K_UNDO  &kp K_CUT &kp K_COPY  &kp K_PASTE   &kp UNDER   &trans &trans   &kp DQT     &kp QMARK    &kp SEMI  &kp COLON     &kp PIPE    &kp PSCRN 
                         &trans    &trans      &trans        &trans      &trans &trans   &trans      &trans       &trans    &trans
             >;
